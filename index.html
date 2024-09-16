@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Section -->
+    <div id="welcome-section" class="welcome-container">
+        <div class="welcome-text">
+            <h1>Welcome to the Quiz App</h1>
+            <p>Click the button below to start the quiz.</p>
+        </div>
+        <button id="start-button">Start</button>
+    </div>
+
+    <!-- Instructions Section -->
+    <div id="instructions-section" class="instructions-container" style="display: none;">
+        <h1>Quiz Instructions</h1>
+        <ul class="instructions-list">
+            <li>Each question has multiple choices. Select the best answer.</li>
+            <li>You have unlimited time to complete the quiz, so take your time!</li>
+            
+            <li>When you click the any answer then automatically shift to next question.</li>
+            <li>At the last question the Score button show click and find your progress. Good luck!</li>
+        </ul>
+        <button id="start-quiz-button">Start Quiz</button>
+    </div>
+    <!-- <----------question--------->
+
+
+    <div id="question-container" class="hidden" style="display: none">
+      <h2 id="question"></h2>
+      <ul id="options"></ul>
+      <button id="next-button">Next</button>
+      
+      <button id="show-score-button" style="display: none;">Show Score</button>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
